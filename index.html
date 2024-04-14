@@ -1,187 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <!-- <link rel="stylesheet" href="bg-color.css" /> -->
-  <title>Git init</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Git init</title>
 </head>
-
 <body>
-  <div class="container">
-    <!-- <h1>Git init</h1>
-    <p>Lorem ipsum dolor sit amet.</p>
-     -->
-    <nav>
-      <!--Nav-bar -->
-      <a class="logo" href="#">Logo</a>
 
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#sect1">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Estimator</a></li>
-      </ul>
-    </nav>
+    <div class="center-body">
+        <form action="#">
+            <div class="form-group">
+                <label for="title">Titre</label>
+                <input type="text" name="title" id="title">
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea rows="5" type="text" name="description" id="description"></textarea>
+            </div>
 
-    <div class="main">
-      <div class="box1">
-        <p class="bigtxt">Erigeons Des Espaces</p>
-        <p class="bigtxt">Qui Résistent Au Temps</p>
+            <button type="submit" class="btn btn-save"> </button>
+        </form>
+    </div>
 
-        <p class="txt">
-          Nous batissons des fondations solides pour vos projets, avec une
-          expertise qui élève vos idées et un engagement a construie, innover
-          et exceller. Notre équipe passionnée travaille sans relache pour
-          concretiser vos visions architecturcies. Chaque brique que nous
-          posons est un pas vers un avenir durable.
-        </p>
-
-        <input class="contact" type="button" value="Contact us" />
-        <input class="about" type="button" value="About us" />
-
-        <div class="k9">
-          <div class="one">
-            <p class="f1">9K+</p>
-            <p class="ftxt">clients sur le territoire</p>
-          </div>
-          <div class="two">
-            <p class="f2">9K+</p>
-            <p class="ftxt2">clients sur le territoire</p>
-          </div>
-          <div class="one">
-            <p class="f1">9K+</p>
-            <p class="ftxt">clients sur le territoire</p>
-          </div>
+    <div class="center-body ff card-wrapper">
+        <h1>Article list</h1>
+        <p>Empty list</p>
+        <div class="cards-grid">
+            <div class="card">
+                <div class="card-actions">
+                    <div class="action delete"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#fff" viewBox="0 0 256 256"><path d="M216,48H176V40a24,24,0,0,0-24-24H104A24,24,0,0,0,80,40v8H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM96,40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96Zm96,168H64V64H192ZM112,104v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm48,0v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Z"></path></svg></div>
+                    <div class="action update"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#fff" viewBox="0 0 256 256"><path d="M227.32,73.37,182.63,28.69a16,16,0,0,0-22.63,0L36.69,152A15.86,15.86,0,0,0,32,163.31V208a16,16,0,0,0,16,16H216a8,8,0,0,0,0-16H115.32l112-112A16,16,0,0,0,227.32,73.37ZM92.69,208H48V163.31l88-88L180.69,120ZM192,108.69,147.32,64l24-24L216,84.69Z"></path></svg></div>
+                </div>
+                <div class="card-wrapper">
+                    <span>#0</span>
+                    <h1 >My title</h1>
+                    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, commodi facilis numquam facere magnam deleniti!</p>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="box2"><img src="./assets/image.png" alt="" /></div>
-    </div>
-  </div>
-
-  <div class="last">
-    <p class="center">Our <span>offers</span></p>
-    <p class="ptxt">
-      Nous batissons des fondations pour vos projets avec une expertise qui
-      élève vos idé"s et <br />
-      un engagement à construire, innover et exceller
-    </p>
-
-    <div class="contain" id="sect1">
-      <div class="item">
-        <img src="./assets/logo 1.png" alt="" srcset="" width="140px" class="im1" />
-        <p class="offer" id="o1">Offer title</p>
-        <p class="suite" id="s1">
-          Nous batissons des fondations pour vos projets avec une expertise
-          qui élève vos idé"s et un engagement à construire, innover et
-          exceller
-        </p>
-      </div>
-      <div class="item" id="couleur">
-        <img src="./assets/logo2.png" width="130px" alt="" srcset="" />
-        <p class="offer" id="o2">Offer title</p>
-        <p class="suite" id="s2">
-          Nous batissons des fondations pour vos projets avec une expertise
-          qui élève vos idé"s et un engagement à construire, innover et
-          exceller
-        </p>
-      </div>
-      <div class="item">
-        <img src="./assets/logo3.png" width="140px" alt="" srcset="" class="im3" />
-        <p class="offer" id="o3">Offer title</p>
-        <p class="suite" id="s3">
-          Nous batissons des fondations pour vos projets avec une expertise
-          qui élève vos idé"s et un engagement à construire, innover et
-          exceller
-        </p>
-      </div>
-      <div class="item">
-        <img src="./assets/logo4.png" width="140px" alt="" srcset="" class="im4" />
-        <p class="offer" id="o4">Offer title</p>
-        <p class="suite" id="s4">
-          Nous batissons des fondations pour vos projets avec une expertise
-          qui élève vos idé"s et un engagement à construire, innover et
-          exceller
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="footer">
-    <div class="contactfooter">
-      <p class="us">Contact us</p>
-      <p class="suitefooter" id="">
-        Nous batissons des fondations pour vos projets avec une expertise qui
-        élève vos idé"s et un engagement à construire, innover et exceller
-      </p>
-
-      <input class="contact" type="button" value="Contact us" />
     </div>
 
-    <div class="part4">
-      <p class="centerp4">Some of <span>our projects</span></p>
-      <p class="ptxt">
-        Nous batissons des fondations pour vos projets avec une expertise qui
-        élève vos idées et <br />
-        un engagement à construire, innover et exceller
-      </p>
-      <P class="backgroundtext">01</P>
 
-      <div class="element">
-        <div class="ele">
-          <div class="ttext">Nous battissons des fondations solides pour vos projets avec une expertise qui élève vos
-            idées et un engagement à construire innover et excellerNous battissons des fondations solides pour vos
-            projets avec une expertise qui élève vos idées et un engagement à construire innover et exceller.Nous
-            battissons des fondations solides pour vos projets avec une expertise qui élève vos idées et un engagement à
-            construire innover et exceller</div>
-
-
-        </div>
-        <div class="ele2 ele"> <img src="./assets/image.png" alt="" /></div>
-        <div class="ele3 ele"><img src="./assets/project2png.png" alt=""></div>
-
-      </div>
-      <div>
-        <input class="about " type="button" value="en savoir plus" </div>
-      </div>
-    </div>
-    <div class="image">
-      <img src="./assets/photo.png">
-     <div class="us">Request a Quotation</div>
-     
-      <div class="contactfooter"> Nous batissons des fondations pour vos projets avec une expertise qui élève vos
-         idé"s et un engagement à
-        construire, innover et exceller</div>
-        <input class="about" type="button" value="my quote" </div>
-     
-
-
-
-    </div>
-    <div class="ptxt">
-<p class="centerp4">what<span class="centerp4">our clients<h class="centerp4">says</h> </span> </p>
-
-
-<p class="ptxt">Nous batissons des fondations pour vos projets avec une expertise qui élève vos
-  ideés et un engagement à
- construire, innover et exceller</p>
-    </div>
-    <diV class="footer">
-<p>Nous battissons des fondations pour vos projet, avec une expertise qui eleve vos idéés et
-  un engagement a construire, innover et excellernous battissons des fondations pour vos
-  projet, avec une expertise qui eleve vos idéés et un engagement a construire, innover et exceller
-  Nous battissons des fondations pour vos projet, avec une expertise qui eleve vos idéés et
-  un engagement a construire, innover et excellernous battissons des fondations pour vos projet,
-  avec une expertise qui eleve vos idéés et un engagement a construire, innover et exceller
-  
-  </p>
-    </diV>
-    <div class="im3">
-      <img src="./assets/contact-1.jpg">
-      <h>Follow us an social medias</h>
-    </div>
-
+    <script src="app.js"></script>
+</body>
 </html>
